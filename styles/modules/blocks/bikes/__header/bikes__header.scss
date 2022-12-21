@@ -1,0 +1,12 @@
+.bikes__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 54px;
+}
+
+@media screen and (max-width: 767px) {
+  .bikes__header {
+    flex-direction: column;
+  }
+}

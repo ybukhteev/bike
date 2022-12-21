@@ -1,0 +1,20 @@
+.workout {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'workout-title workout-image'
+    'workout-text workout-image'
+    'workout-list workout-image';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(140px, 1fr) 1fr minmax(2%, auto);
+  column-gap: 160px;
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 767px) {
+  .workout {
+    display: flex;
+    flex-direction: column;
+  }
+}

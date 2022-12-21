@@ -1,0 +1,476 @@
+@charset "UTF-8";
+@import '../vendor/normalize.css';
+@import '../vendor/fonts/fonts.css';
+.html {
+  background-color: #F4F4F4;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page__main {
+  padding-top: 74px;
+}
+
+.header {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  top: 0;
+  right: 10%;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    position: static;
+  }
+}
+.header__menu {
+  margin: 0;
+}
+
+.header__hamb {
+  margin-top: 28px;
+  margin-right: 18px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: center;
+  min-height: 74px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+.menu__link {
+  text-decoration: none;
+  color: #151515;
+  font: 500 14px/18px "Inter";
+}
+
+.hamb {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .hamb {
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 16px;
+  }
+  .hamb:before,
+.hamb:after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0;
+  }
+  .hamb:before {
+    top: 0;
+  }
+  .hamb:after {
+    bottom: 0;
+  }
+}
+.hamb__span {
+  position: absolute;
+  background-color: #000;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  top: 7px;
+}
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main__triathlon {
+  margin-left: auto;
+}
+
+.triathlon {
+  max-width: 1320px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-areas: "title   .   image" ". . image" "text      .   image" ". . image" "info    .   image" ". . image" "systemsyx  . image" ". . ." "blockquote-image . quote" "blockquote-image . quote-author";
+  grid-template-columns: minmax(460px, 1fr) 60px 610px;
+  grid-template-rows: auto 50px repeat(5, auto) 120px repeat(3, auto);
+}
+
+@media screen and (max-width: 767px) {
+  .triathlon {
+    display: flex;
+    flex-direction: column;
+    max-width: 284px;
+    margin: 0 auto;
+  }
+}
+.triathlon__title {
+  margin: 60px 0 0 0;
+  padding: 0;
+  grid-area: title;
+  font-weight: 700;
+  font-size: 55px;
+  max-width: 460px;
+}
+
+.triathlon__text {
+  margin: 0;
+  padding: 0;
+  max-width: 460px;
+  grid-area: text;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5555555556;
+}
+
+.triathlon__info {
+  grid-area: info;
+}
+
+.triathlon__link {
+  margin: 0;
+  text-align: center;
+  display: block;
+  max-width: 180px;
+  padding: 16px 10px;
+  background-color: #24B47E;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.systemsix {
+  grid-area: systemsyx;
+  text-decoration: none;
+  color: #151515;
+}
+
+.triathlon__systemsyx {
+  margin-bottom: 209px;
+}
+
+.triathlon__image {
+  max-width: 100%;
+  grid-area: image;
+  justify-self: end;
+}
+
+@media screen and (max-width: 767px) {
+  .triathlon__image {
+    order: 4;
+  }
+}
+.triathlon__blockquote-image {
+  grid-area: blockquote-image;
+  max-width: 100%;
+}
+
+.triathlon__quote {
+  max-width: 470px;
+  margin: 0;
+  padding: 0;
+  grid-area: quote;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.triathlon__quote-author {
+  grid-area: quote-author;
+  align-self: end;
+  margin: 0;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.triathlon__quote-author:after {
+  content: "Велогощик";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  color: #222;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.highway {
+  max-width: 1200px;
+  display: grid;
+  grid-template-areas: "highway-title . ." "highway-text . ." "slider slider slider";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 300px 300px;
+  margin-bottom: 120px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .highway {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.highway__heading {
+  grid-area: highway-title;
+}
+
+.highway__text {
+  grid-area: highway-text;
+}
+
+.slider {
+  max-width: 1440px;
+  overflow: hidden;
+  margin-left: auto;
+  grid-area: slider;
+}
+
+@media screen and (max-width: 767px) {
+  .slider {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.slider__wrapper {
+  max-width: 100%;
+  position: relative;
+}
+
+.slider__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: start;
+}
+
+.slider__button {
+  position: absolute;
+  cursor: pointer;
+}
+
+.slider__button_prev {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  margin-bottom: 20px;
+}
+
+.slider__button_next {
+  position: relative;
+  cursor: pointer;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  margin-bottom: 20px;
+  left: 30px;
+}
+
+.bikes {
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .bikes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.bikes__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 54px;
+}
+
+@media screen and (max-width: 767px) {
+  .bikes__header {
+    flex-direction: column;
+  }
+}
+.bikes__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.0909090909;
+  letter-spacing: -0.5px;
+  color: #151515;
+}
+
+.bikes__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+
+.bikes__link {
+  text-decoration: none;
+  color: #222222;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5555555556;
+  opacity: 0.7;
+}
+
+.bikes__link_active {
+  color: #151515;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5555555556;
+  opacity: 1;
+}
+
+.picture-list {
+  display: grid;
+  grid-template-columns: 380px 380px 380px;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-around;
+  margin: 0 0 60px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .picture-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 284px;
+  }
+}
+.picture-list__item {
+  margin: 0;
+}
+
+.picture-list__figure {
+  width: 100%;
+  margin-left: 0;
+}
+
+.picture-list__figcaption {
+  padding-top: 22px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: #151515;
+}
+
+.picture-list__image {
+  background: #F4F4F4;
+  border-radius: 20px;
+  border: 20px solid #F4F4F4;
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+  z-index: 1;
+  width: 100%;
+}
+
+.workout {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "workout-title workout-image" "workout-text workout-image" "workout-list workout-image";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(140px, 1fr) 1fr minmax(2%, auto);
+  -moz-column-gap: 160px;
+       column-gap: 160px;
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 767px) {
+  .workout {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.workout__title {
+  margin: 0;
+  padding: 0;
+  grid-area: workout-title;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.0909090909;
+  letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 767px) {
+  .workout__title {
+    max-width: 284px;
+    font: 700 32px/40px "Inter", sans-serif;
+    letter-spacing: -0.5px;
+  }
+}
+.workout__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5555555556;
+}
+
+.workout__list {
+  grid-area: workout-list;
+  display: flex;
+  -moz-column-gap: 29px;
+       column-gap: 29px;
+  margin: 0;
+  padding: 0;
+}
+
+.workout__link {
+  color: #151515;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5555555556;
+}
+
+.workout__image {
+  grid-area: workout-image;
+}
+
+@media screen and (max-width: 767px) {
+  .workout__image {
+    order: 1;
+  }
+}
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.footer__title {
+  max-width: 229px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,14 @@
+.slider {
+  max-width: 1440px;
+  overflow: hidden;
+  margin-left: auto;
+  grid-area: slider;
+}
+
+@media screen and (max-width:767px) {
+  .slider {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+}

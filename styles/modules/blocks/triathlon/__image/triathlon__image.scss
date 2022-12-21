@@ -1,0 +1,11 @@
+.triathlon__image {
+  max-width: 100%;
+  grid-area: image;
+  justify-self: end;
+}
+
+@media screen and (max-width: 767px) {
+  .triathlon__image {
+    order: 4;
+  }
+}

@@ -1,0 +1,19 @@
+.highway {
+  max-width: 1200px;
+  display: grid;
+  grid-template-areas:
+    'highway-title . .'
+    'highway-text . .'
+    'slider slider slider';
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 300px 300px;
+  margin-bottom: 120px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .highway {
+    display: flex;
+    flex-direction: column;
+  }
+}

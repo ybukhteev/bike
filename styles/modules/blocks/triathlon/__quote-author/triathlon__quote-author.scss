@@ -1,0 +1,19 @@
+.triathlon__quote-author {
+  grid-area: quote-author;
+  align-self: end;
+  margin: 0;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.triathlon__quote-author:after {
+  content: 'Велогощик';
+  position: absolute;
+  top: 30px;
+  left: 0;
+  color: #222;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(28px / 16px);
+}

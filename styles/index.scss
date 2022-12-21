@@ -1,0 +1,72 @@
+@import '../styles/modules/blocks/variables.scss';
+@import '../vendor/normalize.css';
+@import '../vendor/fonts/fonts.css';
+
+@import '../styles/modules/blocks/html/html.scss';
+@import '../styles/modules/blocks/page/page.scss';
+@import '../styles/modules/blocks/page/__header/page__header.scss';
+@import '../styles/modules/blocks/page/__main/page__main.scss';
+
+@import '../styles/modules/blocks/header/header.scss';
+@import '../styles/modules/blocks/header/__menu/header__menu.scss';
+@import '../styles/modules/blocks/header/__hamb/header__hamb.scss';
+@import '../styles/modules/blocks/menu/menu.scss';
+@import '../styles/modules/blocks/menu/__list/menu__list.scss';
+@import '../styles/modules/blocks/menu/__link/menu__link.scss';
+@import '../styles/modules/blocks/hamb/hamb.scss';
+@import '../styles/modules/blocks/hamb/__span/hamb__span.scss';
+
+
+@import '../styles/modules/blocks/main/main.scss';
+@import '../styles/modules/blocks/main/__triathlon/main__triathlon.scss';
+
+@import '../styles/modules/blocks/triathlon/triathlon.scss';
+@import '../styles/modules/blocks/triathlon/__title/triathlon__title.scss';
+@import '../styles/modules/blocks/triathlon/__text/triathlon__text.scss';
+@import '../styles/modules/blocks/triathlon/__info/triathlon__info.scss';
+@import '../styles/modules/blocks/triathlon/__link/triathlon__link.scss';
+@import '../styles/modules/blocks/systemsix/systemsix.scss';
+@import '../styles/modules/blocks/triathlon/__systemsyx/triathlon__systemsyx.scss';
+@import '../styles/modules/blocks/triathlon/__image/triathlon__image.scss';
+@import '../styles/modules/blocks/triathlon/__blockquote-image/triathlon__blockquote-image.scss';
+@import '../styles/modules/blocks/triathlon/__quote/triathlon__quote.scss';
+@import '../styles/modules/blocks/triathlon/__quote-author/triathlon__quote-author.scss';
+
+@import '../styles/modules/blocks/highway/highway.scss';
+@import '../styles/modules/blocks/highway/__heading/highway__heading.scss';
+@import '../styles/modules/blocks/highway/__text/highway__text.scss';
+
+@import '../styles/modules/blocks/slider/slider.scss';
+@import '../styles/modules/blocks/slider/__wrapper/slider__wrapper.scss';
+@import '../styles/modules/blocks/slider/__list/slider__list.scss';
+@import '../styles/modules/blocks/slider/__list-element/slider__list-element.scss';
+@import '../styles/modules/blocks/slider/__button/slider__button.scss';
+@import '../styles/modules/blocks/slider/__button/_prev/slider__button_prev.scss';
+@import '../styles/modules/blocks/slider/__button/_next/slider__button_next.scss';
+
+@import '../styles/modules/blocks/bikes/bikes.scss';
+@import '../styles/modules/blocks/bikes/__header/bikes__header.scss';
+@import '../styles/modules/blocks/bikes/__heading/bikes__heading.scss';
+@import '../styles/modules/blocks/bikes/__list/bikes__list.scss';
+@import '../styles/modules/blocks/bikes/__item/bikes__item.scss';
+@import '../styles/modules/blocks/bikes/__link/bikes__link.scss';
+@import '../styles/modules/blocks/bikes/__link/_active/bikes__link_active.scss';
+
+@import '../styles/modules/blocks/picture-list/picture-list.scss';
+@import '../styles/modules/blocks/picture-list/__item/picture-list__item.scss';
+@import '../styles/modules/blocks/picture-list/__figure/picure-list__figure.scss';
+@import '../styles/modules/blocks/picture-list/__figcaption/picture-list__figcaption.scss';
+@import '../styles/modules/blocks/picture-list/__image/picture-list__image.scss';
+
+@import '../styles/modules/blocks/workout/workout.scss';
+@import '../styles/modules/blocks/workout/__title/workout__title.scss';
+@import '../styles/modules/blocks/workout/__text/workout__text.scss';
+@import '../styles/modules/blocks/workout/__list/workout__list.scss';
+@import '../styles/modules/blocks/workout/__link/workout__link.scss';
+@import '../styles/modules/blocks/workout/__image/workout__image.scss';
+
+@import '../styles/modules/blocks/footer/footer.scss';
+@import '../styles/modules/blocks/footer/__title/footer__title.scss';
+@import '../styles/modules/blocks/footer/__text/footer__text.scss';
+@import '../styles/modules/blocks/footer/__author/footer__author.scss';
+@import '../styles/modules/blocks/footer/__theme-button/footer__theme-button.scss';

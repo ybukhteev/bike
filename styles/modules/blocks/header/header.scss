@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  top: 0;
+  right: 10%;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    position: static;
+  }
+}

@@ -1,0 +1,9 @@
+.workout__image {
+  grid-area: workout-image;
+}
+
+@media screen and (max-width: 767px) {
+  .workout__image {
+    order: 1;
+  }
+}
