@@ -1,0 +1,18 @@
+.bikes__mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .bikes__mobile {
+    margin-top: 40px;
+    display: flex;
+    align-self: start;
+    width: 114px;
+    max-width: 100%;
+    font: 600 11px/14px 'Inter', sans-serif;
+    padding: 8px 30px 8px 12px;
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    background-color: #F4F4F4;
+  }
+}

@@ -1,4 +1,12 @@
 .triathlon__blockquote-image {
+  margin: 0;
   grid-area: blockquote-image;
   max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .triathlon__blockquote-image {
+    order: 5;
+    margin-bottom: 40px;
+  }
 }

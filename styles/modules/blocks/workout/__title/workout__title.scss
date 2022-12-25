@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
   grid-area: workout-title;
-  font-weight: 700;
-  font-size: 55px;
-  line-height: calc(60px / 55px);
+  font: 600 55px/60px 'Inter', sans-serif;
   letter-spacing: -0.5px;
 }
 
@@ -13,5 +11,7 @@
     max-width: 284px;
     font: 700 32px/40px 'Inter', sans-serif;
     letter-spacing: -.5px;
+    order: 1;
+    margin-bottom: 40px;
   }
 }

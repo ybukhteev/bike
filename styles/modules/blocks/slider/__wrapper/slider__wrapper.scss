@@ -1,4 +1,9 @@
-.slider__wrapper {
-  max-width: 100%;
-  position: relative;
+.slider__wrapper {}
+
+@media screen and (max-width: 767px) {
+  .slider__wrapper {
+    max-width: 284px;
+    display: flex;
+    flex-direction: column;
+  }
 }

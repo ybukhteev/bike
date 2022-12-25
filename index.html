@@ -10,6 +10,7 @@
 </head>
 
 <body class="page">
+  <!--HEADER------------------------------------------------------------------------------------------------------->
   <header class="page__header header">
     <nav>
       <ul class="header__menu menu">
@@ -22,6 +23,7 @@
       <span class="hamb__span"></span>
     </div>
   </header>
+  <!---------------------------------------------------------------------------------------------------------------->
   <main class="page__main main">
     <!--triathlon------------------------------------------------------------------------------------------------------->
     <section class="main__triathlon triathlon">
@@ -40,7 +42,13 @@
       <p class="triathlon__quote-author">Эдди Меркс</p>
     </section>
     <section class="main__highway highway">
-      <h2 class="highway__heading">Шоссе</h2>
+      <div class="highway__header">
+        <h2 class="highway__title">Шоссе</h2>
+        <div class="slider__mobile-buttons-wrap">
+          <button type="button" class="slider__mobile-button slider__mobile-button_prev"></button>
+          <button type="button" class="slider__mobile-button slider__mobile-button_next"></button>
+        </div>
+      </div>
       <p class="highway__text">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или
         равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.
       </p>
@@ -54,8 +62,10 @@
               <img src="./images/forest-road.jpg" alt="Лесная дорога">
             </li>
           </ul>
-          <button type="button" class="slider__button_prev"></button>
-          <button type="button" class="slider__button_next"></button>
+          <div class="slider__buttons-wrap">
+            <button type="button" class="slider__button slider__button_prev"></button>
+            <button type="button" class="slider__button slider__button_next"></button>
+          </div>
         </div>
       </div>
     </section>
@@ -69,6 +79,11 @@
           <li class="bikes__item"><a href="#" class="bikes__link">Грэвел</a></li>
           <li class="bikes__item"><a href="#" class="bikes__link">TT</a></li>
         </ul>
+        <select name="" id="" class="bikes__mobile">
+          <option value="highway">Шоссе</option>
+          <option value="gravel">Грэвел</option>
+          <option value="tt">TT</option>
+        </select>
       </div>
       <ul class="picture-list">
         <li class="picture-list__item">
@@ -90,6 +105,11 @@
           </figure>
         </li>
       </ul>
+      <div class="carousel-dots">
+        <div class="carousel-dots__dot carousel-dots__dot_active"></div>
+        <div class="carousel-dots__dot"></div>
+        <div class="carousel-dots__dot"></div>
+      </div>
     </section>
     <!------------------------------------------------------------------------------------------------------------------------->
     <!--workout---------------------------------------------------------------------------------------------------------------->
@@ -107,10 +127,13 @@
   </main>
   <footer class="page__footer footer">
     <h2 class="footer__title">Подпишитесь на рассылку —</h2>
-    <input type="text" class="footer__input">
+    <form action="#" сlass="footer__subscription">
+      <input type="email" class="footer__input" placeholder="Ваш e-mail" required>
+    </form>
     <p class="footer__author">&copy;Road Club 2021</p>
     <div class="footer__theme-button"></div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>

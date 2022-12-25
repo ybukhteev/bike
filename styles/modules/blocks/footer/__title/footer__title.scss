@@ -1,3 +1,8 @@
-.footer__title {
-  max-width: 229px;
+@media sreen and (max-width: 767px) {
+  .footer__title {
+    margin: 0 0 50px 0;
+    max-width: 229px;
+    color: #151515;
+    font: 600 24px/32px 'Inter', sans-serif;
+  }
 }

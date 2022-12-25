@@ -2,7 +2,16 @@
   margin: 60px 0 0 0;
   padding: 0;
   grid-area: title;
-  font-weight: $font-weight + 200;
-  font-size: $font-size + 37px;
   max-width: 460px;
+  font: 700 55px/60px 'Inter', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 767px) {
+  .triathlon__title {
+    order: 1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font: 700 32px/40px 'Inter', sans-serif;
+  }
 }

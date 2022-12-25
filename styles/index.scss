@@ -16,9 +16,10 @@
 @import '../styles/modules/blocks/hamb/hamb.scss';
 @import '../styles/modules/blocks/hamb/__span/hamb__span.scss';
 
-
 @import '../styles/modules/blocks/main/main.scss';
 @import '../styles/modules/blocks/main/__triathlon/main__triathlon.scss';
+@import '../styles/modules/blocks/main/__highway/main__highway.scss';
+@import '../styles/modules/blocks/main/__workout/main__workout.scss';
 
 @import '../styles/modules/blocks/triathlon/triathlon.scss';
 @import '../styles/modules/blocks/triathlon/__title/triathlon__title.scss';
@@ -33,13 +34,18 @@
 @import '../styles/modules/blocks/triathlon/__quote-author/triathlon__quote-author.scss';
 
 @import '../styles/modules/blocks/highway/highway.scss';
-@import '../styles/modules/blocks/highway/__heading/highway__heading.scss';
+@import '../styles/modules/blocks/highway/__header/highway__header.scss';
+@import '../styles/modules/blocks/highway/__title/highway__title.scss';
 @import '../styles/modules/blocks/highway/__text/highway__text.scss';
-
 @import '../styles/modules/blocks/slider/slider.scss';
+@import '../styles/modules/blocks/slider/__mobile-button-wrap/slider__mobile-buttons-wrap.scss';
+@import '../styles/modules/blocks/slider/__mobile-button/slider__mobile-button.scss';
+@import '../styles/modules/blocks/slider/__mobile-button/_prev/slider__mobile-button_prev.scss';
+@import '../styles/modules/blocks/slider/__mobile-button/_next/slider__mobile-button_next.scss';
 @import '../styles/modules/blocks/slider/__wrapper/slider__wrapper.scss';
 @import '../styles/modules/blocks/slider/__list/slider__list.scss';
 @import '../styles/modules/blocks/slider/__list-element/slider__list-element.scss';
+@import '../styles/modules/blocks/slider/__buttons-wrap/slider__buttons-wrap.scss';
 @import '../styles/modules/blocks/slider/__button/slider__button.scss';
 @import '../styles/modules/blocks/slider/__button/_prev/slider__button_prev.scss';
 @import '../styles/modules/blocks/slider/__button/_next/slider__button_next.scss';
@@ -51,10 +57,15 @@
 @import '../styles/modules/blocks/bikes/__item/bikes__item.scss';
 @import '../styles/modules/blocks/bikes/__link/bikes__link.scss';
 @import '../styles/modules/blocks/bikes/__link/_active/bikes__link_active.scss';
+@import '../styles/modules/blocks/bikes/__mobile/bikes__mobile.scss';
+@import '../styles/modules/blocks/carousel-dots/carousel-dots.scss';
+@import '../styles/modules/blocks/carousel-dots/__dot/carousel-dots__dot.scss';
+@import '../styles/modules/blocks/carousel-dots/__dot/_active/carousel-dots__dot_active.scss';
 
 @import '../styles/modules/blocks/picture-list/picture-list.scss';
 @import '../styles/modules/blocks/picture-list/__item/picture-list__item.scss';
 @import '../styles/modules/blocks/picture-list/__figure/picure-list__figure.scss';
+@import '../styles/modules/blocks/picture-list/__figure/_hiden/picture-list__figure_hiden.scss';
 @import '../styles/modules/blocks/picture-list/__figcaption/picture-list__figcaption.scss';
 @import '../styles/modules/blocks/picture-list/__image/picture-list__image.scss';
 
@@ -67,6 +78,8 @@
 
 @import '../styles/modules/blocks/footer/footer.scss';
 @import '../styles/modules/blocks/footer/__title/footer__title.scss';
+@import '../styles/modules/blocks/footer/__subscription/footer__subscription.scss';
+@import '../styles/modules/blocks/footer/__input/footer__input.scss';
 @import '../styles/modules/blocks/footer/__text/footer__text.scss';
 @import '../styles/modules/blocks/footer/__author/footer__author.scss';
 @import '../styles/modules/blocks/footer/__theme-button/footer__theme-button.scss';

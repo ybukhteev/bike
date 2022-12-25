@@ -3,7 +3,14 @@
   margin: 0;
   padding: 0;
   grid-area: quote;
-  font-size: 34px;
-  font-weight: 600;
+  font: 600 34px/44px 'Inter', sans-serif;
   letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 767px) {
+  .triathlon__quote {
+    order: 6;
+    font: 600 23px/29px 'Inter', sans-serif;
+    margin-bottom: 40px;
+  }
 }

@@ -7,7 +7,7 @@
     'workout-text workout-image'
     'workout-list workout-image';
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: minmax(140px, 1fr) 1fr minmax(2%, auto);
+  grid-template-rows: auto 1fr minmax(2%, auto);
   column-gap: 160px;
   padding-top: 150px;
 }
@@ -16,5 +16,9 @@
   .workout {
     display: flex;
     flex-direction: column;
+    max-width: 284px;
+    border-top: 1px solid #E3E3E3;
+    padding-top: 40px;
+    margin-top: 40px;
   }
 }

@@ -1,10 +1,8 @@
 .slider__button_next {
-  position: relative;
-  cursor: pointer;
-  bottom: 0;
-  width: 10px;
-  height: 10px;
-  background: #000;
-  margin-bottom: 20px;
-  left: 30px;
+  background-image: url('./../../../../../../images/arrow-right.svg');
+  background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .slider__button_next {}
 }

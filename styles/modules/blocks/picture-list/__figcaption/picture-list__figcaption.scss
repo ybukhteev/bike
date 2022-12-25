@@ -1,7 +1,11 @@
 .picture-list__figcaption {
   padding-top: 22px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: calc(22px / 18px);
   color: #151515;
+  font: 600 18px/22px 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .picture-list__figcaption {
+    font: 600 14px/18px 'Inter', sans-serif;
+  }
 }

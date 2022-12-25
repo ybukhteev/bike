@@ -1,7 +1,14 @@
 .slider__list {
+  margin: 0;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   padding: 0;
   justify-content: start;
+}
+
+@media screen and (max-width: 767px) {
+  .slider__list {
+    order: 2
+  }
 }

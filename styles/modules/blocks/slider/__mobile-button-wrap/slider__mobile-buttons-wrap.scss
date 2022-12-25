@@ -1,0 +1,11 @@
+.slider__mobile-buttons-wrap {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .slider__mobile-buttons-wrap {
+    display: flex;
+    column-gap: 10px;
+    order: 1;
+  }
+}

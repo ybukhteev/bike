@@ -1,3 +1,14 @@
 .highway__text {
+  max-width: 460px;
+  margin: 50px 0 80px 0;
+  padding: 0;
   grid-area: highway-text;
+  font: 400 18px/28px 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .highway__text {
+    order: 3;
+    margin-top: 40px;
+  }
 }

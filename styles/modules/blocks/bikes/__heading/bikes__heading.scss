@@ -1,8 +1,14 @@
 .bikes__heading {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 55px;
-  line-height: calc(60px / 55px);
-  letter-spacing: -0.5px;
+  margin: 0;
+  padding: 0;
   color: #151515;
+  font: 700 55px/60px 'Inter', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 767px) {
+  .bikes__heading {
+    font: 700 32px/40px 'Inter', sans-serif;
+    letter-spacing: -0.5px;
+  }
 }

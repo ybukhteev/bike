@@ -1,0 +1,15 @@
+.highway__title {
+  margin: 0;
+  grid-area: highway-title;
+  font: 700 55px/60px 'Inter', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 767px) {
+  .highway__title {
+    order: 1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font: 700 32px/40px 'Inter', sans-serif;
+  }
+}

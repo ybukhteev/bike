@@ -6,3 +6,9 @@
   justify-content: end;
   column-gap: 40px;
 }
+
+@media screen and (max-width: 767px) {
+  .bikes__list {
+    display: none;
+  }
+}

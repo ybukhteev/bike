@@ -3,17 +3,18 @@
   display: grid;
   grid-template-areas:
     'highway-title . .'
-    'highway-text . .'
-    'slider slider slider';
+    'highway-text highway-text .'
+    'slider slider slider'
+    'slider-buttons . .';
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px 300px 300px;
-  margin-bottom: 120px;
-  margin: 0 auto;
+  grid-template-rows: repeat(2, auto) 500px 50px;
 }
 
 @media screen and (max-width: 767px) {
   .highway {
     display: flex;
     flex-direction: column;
+    max-width: 284px;
+    border-top: 1px solid #E3E3E3;
   }
 }
